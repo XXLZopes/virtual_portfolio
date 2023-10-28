@@ -1,0 +1,54 @@
+:root {
+  --background_color: rgb(30, 30, 30);
+  --white: white;
+  --orange: #fbb03b;
+  --tech-font: "Kanit", sans-serif;
+  /* --nav-font: "PT Sans Narrow", sans-serif; */
+  --nav-background-color: rgb(30, 30, 30);
+  --nav-orange: #ff8c00;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: transparent;
+  font-family: var(--tech-font);
+  color: white;
+}
+
+.glareBackground {
+  background: linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.2) 25%,
+    rgba(255, 255, 255, 0.5) 25%,
+    rgba(255, 255, 255, 0.5) 50%,
+    transparent 50%,
+    transparent 100%
+  );
+  background-size: 200% 200%;
+  background-position: top right;
+}
+
+.opacity100 {
+    opacity: 1 !important;
+}
+.opacity0 {
+    opacity: 0 !important;
+}
+.fullScreen {
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 999;
+}
+
+.focusedColor {
+  color: var(--orange)
+}
+
+.displayNone {
+  display: none;
+}

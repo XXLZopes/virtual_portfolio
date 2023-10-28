@@ -1,0 +1,138 @@
+.focusedImageModalCon {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+}
+
+.focusedImageModalBackground {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: rgba(0,0,0,.5);
+    cursor: pointer;
+}
+
+.focusedImageModal {
+    width: 80%;
+    height: 90%;
+    background-color: var(--background_color);
+    position: absolute;
+    z-index: 999;
+    opacity: 0;
+    transition-duration: 0.5s;
+    display: flex;
+    justify-content: space-between;
+}
+
+.focusedImageModal iframe {
+    background-color: white;
+    min-width: 400px;
+    /* position: absolute;
+    width: 100% !important;
+    height: 100% !important; */
+}
+
+.infoCon {
+    font-family: var(--tech-font);
+    color: var(--white);
+    width: 100%;
+    padding: 30px;
+}
+
+.descriptionCon {
+    margin-top: 30px;
+}
+
+.focusedImageModal ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.focusedImageModal div ul li {
+    font-size: 1.4rem;
+    cursor: initial;
+}
+
+.focusedImageModal ul li::before {
+    content: "-";
+    margin-right: 10px;
+}
+
+.focusedImageModal div p {
+    font-size: 1.4rem;
+}
+
+.toWebsite {
+    width: fit-content;
+    padding: 3px 10px;
+    border-radius: 15px;
+    /* margin: 60px auto;
+    margin-bottom: 0; */
+    position: absolute;
+    bottom: 100px;
+    background-color: var(--orange);
+    /* animation: glowAnimation 5s infinite alternate; */
+}
+
+.toWebsiteCon {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+@keyframes glowAnimation {
+    0% {
+        box-shadow: 0 0 0px #4bffb4, 0 0 8px #4bffb4;
+    }
+    50% {
+        box-shadow: 0 0 15px #4bffb4, 0 0 20px #4bffb4;
+    }
+    100% {
+        box-shadow: 0 0 5px #4bffb4, 0 0 10px #4bffb4;
+    }
+}
+.toWebsite:hover {
+    scale: 1.05;
+    filter: brightness(110%);
+}
+.toWebsite a{
+    font-size: 2rem;
+    color: var(--white);
+    
+}
+
+.modalNav {
+    background-color: rgb(54, 54, 54);;
+    height: 40px;
+    min-width: 20%;
+    z-index: 99999;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    border: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.modalNav > * {
+    margin-right: 6.5px;
+    cursor: pointer;
+}
+
+.hidden {
+    /* transform: translateX(6.5px); */
+    /* margin-right: 0; */
+    width: 40px !important;
+    min-width: 0 !important;
+    overflow: hidden;
+    transition-duration: .5s;
+}

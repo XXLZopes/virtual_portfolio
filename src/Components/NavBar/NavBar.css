@@ -1,0 +1,35 @@
+nav {
+    display: flex;
+    height: 120px;
+    align-items: flex-end;
+    justify-content: center;
+    border-bottom: solid var(--orange) 2px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0 10px;
+}
+li {
+    text-decoration: none;
+    font-family: var(--tech-font);
+    /* font-family: 'Kanit', sans-serif; */
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--white);
+    cursor: pointer;
+}
+
+nav ul li {
+    margin-right: 30px;  /* Adjust this value to your needs */
+}
+
+/* nav ul li:first-child {
+
+} */
+
+nav ul li:last-child {
+    margin-right: 0;
+}

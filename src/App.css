@@ -1,0 +1,56 @@
+.App-header {
+  width: 100%;
+  background-color: var(--nav-background-color);
+  /* border-bottom: solid orange 2px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+.App-header h1 {
+  margin-left: 30px;
+}
+@media screen and (max-width: 975px) {
+  .App-header h1 {
+    font-size: 1.8rem !important;
+    margin-left: 15px;
+  }
+}
+
+footer {
+  position: fixed;
+  z-index: 99;
+  width: 100vw;
+  bottom: 0;
+  background-color: var(--nav-background-color);
+  padding: 10px
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer ul li {
+  font-size: 1rem;
+  cursor: initial;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  /* margin: 10rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 60px;
+  z-index: 999999 !important;
+  text-align: center; */
+}

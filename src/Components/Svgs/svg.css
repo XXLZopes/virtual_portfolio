@@ -1,0 +1,36 @@
+.logoContainer {
+    display: flex;
+    align-items: flex-end;
+    width: 33%;
+    justify-content: space-around;
+    min-width: fit-content;
+    /* border-bottom: solid orange 2px; */
+}
+.logoContainer h1 {
+    font-family: var(--tech-font);
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: var(--white);
+    line-height: 1;
+}
+.logoMarkSVG {
+    cursor: pointer;
+    margin: 0;
+    height: 120px;
+}
+
+.maximizeSvg {
+    height: 27px;
+    /* color: #ff8c00 */
+}
+
+.backArrow, .close {
+    fill: var(--nav-orange);
+    /* height: 100% !important; */
+    /* width: ; */
+}
+
+/* svg {
+    display: flex;
+    text-align: center;
+} */
