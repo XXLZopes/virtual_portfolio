@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d687c3f8.css",
+    "main.js": "/static/js/main.3ffa589d.js",
+    "static/js/787.d0d7ccfe.chunk.js": "/static/js/787.d0d7ccfe.chunk.js",
+    "static/media/self.png": "/static/media/self.3cd7ccacd2d3c05c0d5c.png",
+    "static/media/lynncarlinart.png": "/static/media/lynncarlinart.9e581c820061027dc1bf.png",
+    "static/media/adhc-prev.png": "/static/media/adhc-prev.8bd7ae468344f99dd22b.png",
+    "static/media/runbuddy-prev.png": "/static/media/runbuddy-prev.6ec31cf6d00deb49b055.png",
+    "static/media/lynncarlinart-prev.png": "/static/media/lynncarlinart-prev.61694747056914df149f.png",
+    "static/media/aandlfeed-prev.png": "/static/media/aandlfeed-prev.ed7b29dbe06d253ef4f4.png",
+    "static/media/aandlfeed.png": "/static/media/aandlfeed.7b29f4ed4430f8873089.png",
+    "static/media/green.png": "/static/media/green.0f909d69632da16c1673.png",
+    "static/media/runbuddy.png": "/static/media/runbuddy.20ef85246560af37983d.png",
+    "static/media/darwindash-prev.png": "/static/media/darwindash-prev.3ff47e76eab99cf5e0b4.png",
+    "static/media/ddp.png": "/static/media/ddp.17f9f4c4121071799358.png",
+    "static/media/darwindash.png": "/static/media/darwindash.0fe23c00ae5e12b72532.png",
+    "static/media/adhc.png": "/static/media/adhc.973ef29982c497d5975f.png",
+    "index.html": "/index.html",
+    "main.d687c3f8.css.map": "/static/css/main.d687c3f8.css.map",
+    "main.3ffa589d.js.map": "/static/js/main.3ffa589d.js.map",
+    "787.d0d7ccfe.chunk.js.map": "/static/js/787.d0d7ccfe.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d687c3f8.css",
+    "static/js/main.3ffa589d.js"
+  ]
+}
