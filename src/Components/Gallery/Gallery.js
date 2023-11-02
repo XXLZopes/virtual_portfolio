@@ -15,14 +15,15 @@ function Gallery({
   // const [galleryModalClassName, setGalleryModalClassName] = useState("");
   function createGalleryElement(elementInfo, index) {
     return (
-      <div className="galleryElementCon">
+      <div className="galleryElementCon"
+      onClick={()=> document.body.style.overflow = 'hidden'}
+      >
         <img
           src={require(`../../Assets/GalleryImages/${elementInfo.src}.png`)}
           id={`galleryContent_${index}`}
           key={`galleryContent_${index}`}
           className="galleryElement"
           onClick={() => {
-            document.body.style.overflow = 'hidden';
             setIsImageFocused(true);
             setFocusedImageIndex(index);
             setTimeout(() => {
