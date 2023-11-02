@@ -59,4 +59,5 @@ body {
 
 .disableScrolling {
   overflow: hidden;
+  position: fixed !important;
 }
