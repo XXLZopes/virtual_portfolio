@@ -11,6 +11,7 @@ function FocusedImageModal({
   focusedImageIndex,
   setFocusedImageIndex,
   setGalleryModalClassName,
+  toggleScrolling,
 }) {
   const [isFullScreen, setIsFullScreen] = useState(false);
 
@@ -24,7 +25,7 @@ function FocusedImageModal({
         onClick={() => {
           setGalleryModalClassName("opacity0");
           setIsImageFocused(false);
-          document.body.style.overflow = "initial";
+          toggleScrolling(false);
         }}
       ></div>
       <div className={`focusedImageModal ${galleryModalClassName}`}>
@@ -40,7 +41,7 @@ function FocusedImageModal({
           id="closeModal"
           onClick={() => {
             setIsImageFocused(false);
-            document.body.style.overflow = "initial";
+            toggleScrolling(false);
           }}
         >
           X

@@ -13,8 +13,10 @@ function App() {
   const [isAboutOpen, setIsAboutOpen] = useState(true);
   const [focusedImageIndex, setFocusedImageIndex] = useState(0);
   const [galleryModalClassName, setGalleryModalClassName] = useState("");
+  const [isScrollingDisabled, toggleScrolling] = useState(false);
   return (
-    <div className="App">
+    <div 
+    className={`App ${ isScrollingDisabled && "disableScrolling"}`}>
       <header className="App-header">
         <LogomarkSVG
         setIsAboutOpen={setIsAboutOpen}
@@ -34,6 +36,7 @@ function App() {
         setFocusedImageIndex={setFocusedImageIndex}
         galleryModalClassName={galleryModalClassName}
         setGalleryModalClassName={setGalleryModalClassName}
+        toggleScrolling={toggleScrolling}
         ></Gallery>
       {/* } */}
       {/* </main> */}

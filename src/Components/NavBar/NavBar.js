@@ -10,7 +10,7 @@ function NavBar({ isAboutOpen, setIsAboutOpen }) {
             // document.body.style.overflow = '';
           }}
         >
-          <a className={!isAboutOpen && "focusedColor"} href="#portfolio">
+          <a href="#portfolio" className={!isAboutOpen && "focusedColor"} >
             Portfolio
           </a>
         </li>
@@ -20,7 +20,7 @@ function NavBar({ isAboutOpen, setIsAboutOpen }) {
             // document.body.style.overflow = 'hidden';
           }}
         >
-          <a className={isAboutOpen && "focusedColor"} href="#">
+          <a href="#" className={isAboutOpen && "focusedColor"} >
             About Me
           </a>
         </li>

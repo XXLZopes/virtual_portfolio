@@ -9,6 +9,7 @@ function Gallery({
   setFocusedImageIndex,
   galleryModalClassName,
   setGalleryModalClassName,
+  toggleScrolling
 }) {
   // const [isImageFocused, setIsImageFocused] = useState(false);
   // const [focusedImageIndex, setFocusedImageIndex] = useState(0);
@@ -16,7 +17,7 @@ function Gallery({
   function createGalleryElement(elementInfo, index) {
     return (
       <div className="galleryElementCon"
-      onClick={()=> document.body.style.overflow = 'hidden'}
+      onClick={()=> toggleScrolling(true)}
       >
         <img
           src={require(`../../Assets/GalleryImages/${elementInfo.src}.png`)}
@@ -65,6 +66,7 @@ function Gallery({
           focusedImageIndex={focusedImageIndex}
           setFocusedImageIndex={setFocusedImageIndex}
           setGalleryModalClassName={setGalleryModalClassName}
+          toggleScrolling={toggleScrolling}
         ></FocusedImageModal>
       )}
     </div>
