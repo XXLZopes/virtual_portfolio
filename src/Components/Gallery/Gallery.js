@@ -16,36 +16,40 @@ function Gallery({
   function createGalleryElement(elementInfo, index) {
     return (
       <div className="galleryElementCon">
-      <img
-      src={require(`../../Assets/GalleryImages/${elementInfo.src}.png`)}
-        id={`galleryContent_${index}`}
-        key={`galleryContent_${index}`}
-        className="galleryElement"
-        onClick={() => {
-          setIsImageFocused(true);
-          setFocusedImageIndex(index);
-          setTimeout(() => {
-            setGalleryModalClassName("opacity100");
-          }, 0.1);
-        }}
-      ></img>
-      <img
-      src={require(`../../Assets/GalleryImages/${elementInfo.src}-prev.png`)}
-        id={`galleryContentPrev_${index}`}
-        key={`galleryContentPrev_${index}`}
-        className="galleryElementPrev"
-        onClick={() => {
-          setIsImageFocused(true);
-          setFocusedImageIndex(index);
-          setTimeout(() => {
-            setGalleryModalClassName("opacity100");
-          }, 0.1);
-        }}
-      ></img>
+        <img
+          src={require(`../../Assets/GalleryImages/${elementInfo.src}.png`)}
+          id={`galleryContent_${index}`}
+          key={`galleryContent_${index}`}
+          className="galleryElement"
+          onClick={() => {
+            setIsImageFocused(true);
+            setFocusedImageIndex(index);
+            setTimeout(() => {
+              setGalleryModalClassName("opacity100");
+            }, 0.1);
+          }}
+        ></img>
+        <img
+          src={require(`../../Assets/GalleryImages/${elementInfo.src}-prev.png`)}
+          id={`galleryContentPrev_${index}`}
+          key={`galleryContentPrev_${index}`}
+          className="galleryElementPrev"
+          onClick={() => {
+            setIsImageFocused(true);
+            setFocusedImageIndex(index);
+            setTimeout(() => {
+              setGalleryModalClassName("opacity100");
+            }, 0.1);
+          }}
+        ></img>
       </div>
     );
   }
   return (
+    <>
+                  <div className="sectionHeader">
+          <h1>Portfolio</h1>
+        </div>
     <div id="portfolio" className="GalleryCon glareBackground">
       <>
         {galleryArray.map((elementInfo, index) => {
@@ -62,6 +66,7 @@ function Gallery({
         ></FocusedImageModal>
       )}
     </div>
+    </>
   );
 }
 

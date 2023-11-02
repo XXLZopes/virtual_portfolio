@@ -18,6 +18,10 @@
   color: white;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .glareBackground {
   background: linear-gradient(
     -45deg,

@@ -36,6 +36,12 @@ function FocusedImageModal({
         setIsFullScreen={setIsFullScreen}
         ></MaximizeSvg>
       </nav>
+      <h1 
+      id="closeModal"
+      onClick={()=> setIsImageFocused(false)}
+      >
+        X
+      </h1>
         {/* <img src={require(`../../Assets/GalleryImages/${galleryArray[focusedImageIndex].url}.png`)}></img> */}
         <iframe
           className={isFullScreen && "fullScreen"}

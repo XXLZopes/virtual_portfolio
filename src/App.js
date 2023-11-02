@@ -24,17 +24,9 @@ function App() {
         setIsAboutOpen={setIsAboutOpen}
         ></NavBar>
       </header>
-      {/* <main> */}
-        {/* { */}
-          {/* isAboutOpen ?  */}
           <About
           isAboutOpen={isAboutOpen}
           ></About>
-          {/* : */}
-        <div className="sectionHeader">
-        <h1>Portfolio</h1>
-        </div>
-        
         <Gallery
         isImageFocused={isImageFocused}
         setIsImageFocused={setIsImageFocused}

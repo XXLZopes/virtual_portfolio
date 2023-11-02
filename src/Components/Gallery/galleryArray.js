@@ -1,5 +1,11 @@
 const galleryArray = [
   {
+    src: "dandars",
+    url: "https://xxlzopes.github.io/Dandars/",
+    technologies: ["JavaScript", "HTML", "CSS", "GitHub", "Photoshop", "Illustrator"],
+    description: "This website was created as a prototype for a local game store. It uses parallax to give the illusion of depth. This is my favorite website to date and I have wanted to do something like this for a very long time!",
+  },
+  {
     src: "runbuddy",
     url: "https://xxlzopes.github.io/run-buddy/",
     technologies: ["JavaScript", "HTML", "CSS", "GitHub", "Photoshop"],

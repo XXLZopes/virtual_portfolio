@@ -34,3 +34,9 @@
     display: flex;
     text-align: center;
 } */
+
+@media screen and (max-width: 1060px) {
+  .logoContainer h1 {
+    display: none;
+  }
+}
