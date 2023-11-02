@@ -25,6 +25,7 @@ function FocusedImageModal({
         onClick={() => {
           setGalleryModalClassName("opacity0");
           setIsImageFocused(false);
+          document.body.style.overflow = 'initial';
         }}
       ></div>
       <div className={`focusedImageModal ${galleryModalClassName}`}>
@@ -38,7 +39,11 @@ function FocusedImageModal({
       </nav>
       <h1 
       id="closeModal"
-      onClick={()=> setIsImageFocused(false)}
+      onClick={()=> {
+        setIsImageFocused(false)
+        document.body.style.overflow = 'initial';
+      }
+      }
       >
         X
       </h1>

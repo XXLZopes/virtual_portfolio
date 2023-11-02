@@ -23,19 +23,21 @@
     opacity: 1;
     box-shadow: 5px 10px 10px rgba(0,0,0,.5);
 }
-.galleryElementCon:hover {
-    scale: 1.05;
-    filter: brightness(110%);
-    /* z-index: 99; */
-}
 
 .galleryElement {
     position: absolute;
     z-index: 10;
     transition-duration: .5s;
 }
-.galleryElement:hover {
-    opacity: 0;
+
+@media screen and (min-width: 599px) {
+    .galleryElement:hover {
+        opacity: 0;
+    }
+    .galleryElementCon:hover {
+        scale: 1.05;
+        filter: brightness(110%);
+    }
 }
 
 @media screen and (max-width: 1282px) {

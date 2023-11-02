@@ -22,6 +22,7 @@ function Gallery({
           key={`galleryContent_${index}`}
           className="galleryElement"
           onClick={() => {
+            document.body.style.overflow = 'hidden';
             setIsImageFocused(true);
             setFocusedImageIndex(index);
             setTimeout(() => {
