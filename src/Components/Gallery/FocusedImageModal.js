@@ -12,9 +12,8 @@ function FocusedImageModal({
   setFocusedImageIndex,
   setGalleryModalClassName,
 }) {
+  const [isFullScreen, setIsFullScreen] = useState(false);
 
-  const [isFullScreen, setIsFullScreen] = useState(false)
-  
   function createLi(text) {
     return <li>{text}</li>;
   }
@@ -25,28 +24,27 @@ function FocusedImageModal({
         onClick={() => {
           setGalleryModalClassName("opacity0");
           setIsImageFocused(false);
-          document.body.style.overflow = 'initial';
+          document.body.style.overflow = "initial";
         }}
       ></div>
       <div className={`focusedImageModal ${galleryModalClassName}`}>
-      <nav className={`modalNav ${isFullScreen && 'hidden'}`}>
-        {/* <BackArrow></BackArrow>
+        <nav className={`modalNav ${isFullScreen && "hidden"}`}>
+          {/* <BackArrow></BackArrow>
         <Close></Close> */}
-        <MaximizeSvg
-        isFullScreen={isFullScreen}
-        setIsFullScreen={setIsFullScreen}
-        ></MaximizeSvg>
-      </nav>
-      <h1 
-      id="closeModal"
-      onClick={()=> {
-        setIsImageFocused(false)
-        document.body.style.overflow = 'initial';
-      }
-      }
-      >
-        X
-      </h1>
+          <MaximizeSvg
+            isFullScreen={isFullScreen}
+            setIsFullScreen={setIsFullScreen}
+          ></MaximizeSvg>
+        </nav>
+        <h1
+          id="closeModal"
+          onClick={() => {
+            setIsImageFocused(false);
+            document.body.style.overflow = "initial";
+          }}
+        >
+          X
+        </h1>
         {/* <img src={require(`../../Assets/GalleryImages/${galleryArray[focusedImageIndex].url}.png`)}></img> */}
         <iframe
           className={isFullScreen && "fullScreen"}
@@ -57,6 +55,13 @@ function FocusedImageModal({
           frameBorder="0"
           allowFullScreen
         ></iframe>
+        <div className="toWebsiteMobileCon">
+          <div className="toWebsite">
+            <a href={galleryArray[focusedImageIndex].url} target="blank">
+              Visit Website
+            </a>
+          </div>
+        </div>
         <div className="infoCon">
           <h1>Technologies Used</h1>
           <ul className="technologiesUsed">

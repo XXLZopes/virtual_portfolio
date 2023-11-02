@@ -140,8 +140,22 @@
 #closeModal {
     display: none;
 }
-
+.toWebsiteMobileCon {
+    display: none;
+}
 @media screen and (max-width: 1060px) {
+    .toWebsiteMobileCon {
+        display: flex;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+    }
+    #toWebsiteMobile {
+        background-color: red;
+    }
     .focusedImageModalCon {
         position: fixed;
         top: 0;

@@ -42,18 +42,25 @@
     text-align: center;
 }
 
-.button:hover {
-    filter: brightness(110%);
-}
+
 
 .button a {
     font-size: 1.5rem;
+}
+
+@media screen and (min-width: 599px) {
+    .button:hover {
+        filter: brightness(110%);
+    }
 }
 
 @media screen and (max-width: 1060px) {
     .aboutCon {
         position: relative;
         flex-direction: column;
+        max-height: 100vh;
+        overflow-y: hidden;
+        border-bottom: solid var(--orange) 2px;
     }
     .selfImg {
         width: 100%;
