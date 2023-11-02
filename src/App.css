@@ -22,7 +22,7 @@
 }
 
 footer {
-  position: fixed;
+  /* position: fixed; */
   z-index: 99;
   width: 100vw;
   bottom: 0;
@@ -50,6 +50,18 @@ footer ul li {
     
   .App-header {
     padding: 0rem;
+  }
+
+  footer ul {
+    text-align: center;
+    flex-direction: column;
+  }
+  footer ul li {
+    padding-bottom: .5rem;
+  }
+
+  footer ul:last-child {
+    padding-bottom: 0rem;
   }
 
 }
